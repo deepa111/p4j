@@ -8,6 +8,6 @@ import org.junit.Ignore;
 public class PerforceScmTestUtils {
 
 	public static String getScmUrl(File repositoryRoot) {
-		return "scm:perforce:johnaa@perforce.ic.ncs.com:1424://sandbox/users/johnaa/scm-test/";
+		return "scm:perforce:user@server:port://repo/path";
 	}
 }
