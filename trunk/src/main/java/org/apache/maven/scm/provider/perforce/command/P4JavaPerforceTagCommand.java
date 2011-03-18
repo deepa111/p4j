@@ -23,7 +23,6 @@ import com.perforce.p4java.server.IServer;
 
 public class P4JavaPerforceTagCommand extends AbstractTagCommand {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected ScmResult executeTagCommand(ScmProviderRepository repository, ScmFileSet fileSet, String tagName, ScmTagParameters scmTagParameters) throws ScmException {
 		P4JavaPerforceRepository p4Repo = (P4JavaPerforceRepository) repository;
@@ -53,7 +52,7 @@ public class P4JavaPerforceTagCommand extends AbstractTagCommand {
 				label.update();
 			}
 
-			return new TagScmResult(P4JavaPerforceRepository.NO_COMMAND_LINE, labelSyncedFiles);
+			return new TagScmResult(P4JavaPerforceRepository.NO_COMMAND_LINE, p4Repo.transformFileSpec(labelSyncedFiles));
 		} catch (IOException e) {
 			throw new ScmException("Error obtaining local path for file set.", e);
 		} catch (Exception e) {

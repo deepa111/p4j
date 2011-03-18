@@ -19,7 +19,6 @@ import com.perforce.p4java.server.IServer;
 
 public class P4JavaPerforceUnEditCommand extends AbstractUnEditCommand {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected ScmResult executeUnEditCommand(ScmProviderRepository repository, ScmFileSet fileSet) throws ScmException {
 		P4JavaPerforceRepository p4Repo = (P4JavaPerforceRepository) repository;

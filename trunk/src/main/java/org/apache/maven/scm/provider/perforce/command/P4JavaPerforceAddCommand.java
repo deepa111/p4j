@@ -20,7 +20,6 @@ import com.perforce.p4java.server.IServer;
 
 public class P4JavaPerforceAddCommand extends AbstractAddCommand {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected ScmResult executeAddCommand(ScmProviderRepository repository, ScmFileSet fileSet, String message, boolean binary) throws ScmException {
 		P4JavaPerforceRepository p4Repo = (P4JavaPerforceRepository) repository;

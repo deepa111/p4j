@@ -22,7 +22,6 @@ import com.perforce.p4java.server.IServer;
 
 public class P4JavaPerforceCheckInCommand extends AbstractCheckInCommand {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected CheckInScmResult executeCheckInCommand(ScmProviderRepository repository, ScmFileSet fileSet, String message, ScmVersion scmVersion) throws ScmException {
 		IChangelist changeList = null;

@@ -17,7 +17,6 @@ import com.perforce.p4java.server.IServer;
 
 public class P4JavaPerforceRemoveCommand extends AbstractRemoveCommand {
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected ScmResult executeRemoveCommand(ScmProviderRepository repository, ScmFileSet fileSet, String message) throws ScmException {
 		P4JavaPerforceRepository p4Repo = (P4JavaPerforceRepository) repository;
