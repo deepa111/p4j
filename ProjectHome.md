@@ -1,0 +1,1 @@
+This SCM provider is a pure Java implementation for Perforce.  This project is basically a wrapper around the P4Java API published by Perforce.
